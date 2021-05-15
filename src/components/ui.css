@@ -1,0 +1,51 @@
+.card-container{
+
+    margin-top: 80px;
+    margin-left: 80px;
+    overflow: hidden;
+    height: 140px;
+    width: 310px;
+    box-shadow: 0px 0px 15px -3px;
+    float: left;
+    border-radius: 10px;
+
+}
+.card-container:hover{
+    transform:scale(1.1);
+    box-shadow: 0px 0px 15px 0px #173ad8;
+}
+
+.project-title{
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 40px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}.project-title:hover{
+    transform:scale(1.2);
+    box-shadow: 0px 0px 15px 0px #84e237;
+}
+.card-body{
+    font-size: 20px;
+    font-weight: bold;
+    color:white
+}
+.font{
+    font-size: 13px;
+    color: white;
+}
+.card-item{
+    font-weight: bold;
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    text-shadow: 12px 6px 8px black;
+   
+    
+    
+}
