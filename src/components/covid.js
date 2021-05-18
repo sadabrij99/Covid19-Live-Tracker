@@ -5,22 +5,22 @@ const Covid = () => {
     //for catch api call data
     const [data, setData] = useState([])
 
-    const getData=async()=>{
-        try {
-            const res = await fetch('https://api.covid19india.org/data.json')
-            //for actual data by calling api
-            const actualData = await res.json();
-            console.log(actualData.statewise[0])
-            // this line assign actual data in data(useState)
-            setData(actualData.statewise[0])
-        } catch (error) {
-           console.log(error) 
-        }
-    }
+    
 
     // For API call
     useEffect(() => {
-        return getData           
+        return async()=>{
+            try {
+                const res = await fetch('https://api.covid19india.org/data.json')
+                //for actual data by calling api
+                const actualData = await res.json();
+                console.log(actualData.statewise[0])
+                // this line assign actual data in data(useState)
+                setData(actualData.statewise[0])
+            } catch (error) {
+               console.log(error) 
+            }
+        }           
     }, [])
 
 
