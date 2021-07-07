@@ -1,11 +1,13 @@
 import React from 'react'
+import Chart from './components/Chart'
 import Covid from './components/covid'
 
 const App =()=> {
     return (
-        <>
-         <Covid/>  
-        </>
+        <div>
+         <Covid/>
+         
+        </div>
     )
 }
 
